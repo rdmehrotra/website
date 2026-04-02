@@ -1,41 +1,11 @@
-#-------------------------------
-# General Site Settings
 title: Rohan Mehrotra
 url: "https://rdmehrotra.github.io"
 baseurl: "/personalwebsite"
 
 markdown: kramdown
 
-# REMOVE ANY theme OR remote_theme LINE
-# REMOVE jekyll-paginate plugin
+remote_theme: artemsheludko/norlin
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-sitemap
-theme: jekyll-theme-norlin
-header_pages:
-  - about.md
-  - projects.md
-  - contact.html
-  - styleguide.md
-#-------------------------------
-# Build settings
-markdown: kramdown
-permalink: /:title
-plugins:
-  - jekyll-sitemap
-
-paginate: 8
-paginate_path: "/page/:num"
-
-# Pages Path
-defaults:
-  - scope:
-      path: '_pages'
-    values:
-      permalink: /:basename:output_ext
-
-include:
-  - _pages
-
-sass:
-  style: compressed
