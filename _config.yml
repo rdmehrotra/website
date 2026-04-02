@@ -1,7 +1,16 @@
 #-------------------------------
 # General Site Settings
-baseurl: "" # The subpath of your site, e.g. /blog
-url: "" # The base hostname & protocol for your site, e.g. http://example.com
+title: Rohan Mehrotra
+url: "https://rdmehrotra.github.io"
+baseurl: "/personalwebsite"
+
+markdown: kramdown
+
+# REMOVE ANY theme OR remote_theme LINE
+# REMOVE jekyll-paginate plugin
+
+plugins:
+  - jekyll-sitemap
 theme: jekyll-theme-norlin
 header_pages:
   - about.md
