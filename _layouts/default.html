@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{% include head.html %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ site.title }}</title>
+
+  <!-- FORCE CSS TO LOAD -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+
+</head>
 
 <body>
-  {% if site.data.settings.google-analytics %}
-    {% include google-analytics.html %}
-  {% endif %}
 
   {% include header.html %}
 
-  <!-- begin content -->
-  <main class="content" aria-label="Content">
+  <main class="content">
     {{ content }}
   </main>
-  <!-- end content -->
 
-  <div class="top" title="Top"><i class="fa-solid fa-chevron-up"></i></div>
   {% include footer.html %}
-  {% include javascripts.html %}
+
 </body>
 
 </html>
